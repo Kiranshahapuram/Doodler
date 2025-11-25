@@ -1,0 +1,155 @@
+.root {
+    -fx-background-color: #f6eded;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.game-title {
+    -fx-font-size: 40px;
+    -fx-text-fill: #202020;
+    -fx-effect: dropshadow(gaussian, #a6f516, 4, 0.5, 2, 2);
+}
+
+.green-btn {
+    -fx-background-color: #a6f516;
+    -fx-text-fill: #202020;
+    -fx-font-size: 16px;
+    -fx-padding: 8 24;
+    -fx-background-radius: 12;
+    -fx-cursor: hand;
+}
+
+.green-btn-small {
+    -fx-background-color: #a6f516;
+    -fx-text-fill: #202020;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+}
+
+.input-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #202020;
+    -fx-border-width: 0 0 2 0;
+    -fx-prompt-text-fill: #888;
+}
+
+.word-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #202020;
+    -fx-background-color: #a6f516;
+    -fx-padding: 5 12;
+    -fx-background-radius: 8;
+}
+
+.drawing-canvas {
+    -fx-border-color: #e86f4e;
+    -fx-border-width: 2;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0.5, 0, 2);
+}
+
+.timer-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+/* -------------------- Base Theme -------------------- */
+.root {
+    -fx-background-color: #f6eded;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.game-title {
+    -fx-font-size: 42px;
+    -fx-text-fill: #202020;
+    -fx-effect: dropshadow(gaussian, #a6f516, 8, 0.5, 2, 2);
+    -fx-font-weight: bold;
+    -fx-letter-spacing: 2px;
+}
+
+.input-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #202020;
+    -fx-border-width: 0 0 2 0;
+    -fx-prompt-text-fill: #888;
+}
+
+.green-btn, .green-btn-small {
+    -fx-background-color: #a6f516;
+    -fx-text-fill: #202020;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6, 0.5, 0, 2);
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.green-btn {
+    -fx-font-size: 16px;
+    -fx-padding: 10 28;
+}
+
+.green-btn:hover {
+    -fx-background-color: #beff33;
+}
+
+.green-btn-small {
+    -fx-font-size: 13px;
+    -fx-padding: 6 16;
+}
+
+/* -------------------- Canvas and Word -------------------- */
+.word-label {
+    -fx-font-size: 22px;
+    -fx-text-fill: #202020;
+    -fx-background-color: #a6f516;
+    -fx-padding: 6 14;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0.3, 0, 2);
+}
+
+.drawing-canvas {
+    -fx-border-color: #e86f4e;
+    -fx-border-width: 2;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.4, 0, 3);
+}
+
+.timer-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #333;
+}
+
+/* -------------------- Dialog Styling -------------------- */
+.dialog-pane {
+    -fx-background-color: #f6eded;
+    -fx-border-color: #a6f516;
+    -fx-border-width: 3;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, 3);
+}
+
+.dialog-pane .label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #202020;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .text-field {
+    -fx-border-color: #202020;
+    -fx-border-width: 0 0 2 0;
+    -fx-background-color: transparent;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #a6f516;
+    -fx-text-fill: #202020;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.3, 0, 2);
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #beff33;
+}

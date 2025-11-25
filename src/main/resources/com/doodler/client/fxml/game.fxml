@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.doodler.client.controllers.GameController"
+            stylesheets="@/com/doodler/client/styles/style.css">
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
+            <Label fx:id="wordLabel" text="______" styleClass="word-label"/>
+
+            <HBox spacing="10" alignment="CENTER">
+                <Canvas fx:id="canvas" width="700" height="400" styleClass="drawing-canvas"/>
+
+                <VBox spacing="10" alignment="CENTER">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10" />
+                    </padding>
+                    <Button text="Clear Canvas" onAction="#onClearCanvas" styleClass="green-btn-small"/>
+                    <Label fx:id="timerLabel" text="Time: 60s" styleClass="timer-label"/>
+                </VBox>
+            </HBox>
+        </VBox>
+    </center>
+
+    <right>
+        <VBox spacing="8" alignment="CENTER_RIGHT">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
+            <ScrollPane fitToWidth="true" fitToHeight="true" prefHeight="300">
+                <TextArea fx:id="chatArea" editable="false" wrapText="true" prefHeight="300"/>
+            </ScrollPane>
+            <HBox spacing="6" alignment="CENTER">
+                <TextField fx:id="guessField" promptText="Type your guess..." HBox.hgrow="ALWAYS"/>
+                <Button text="Enter" onAction="#onSendGuess" styleClass="green-btn-small"/>
+            </HBox>
+        </VBox>
+    </right>
+</BorderPane>
